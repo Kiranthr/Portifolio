@@ -675,12 +675,56 @@ footer {
       </div>
       <div class="hero-photo-wrap">
         <div class="hero-photo-ring"></div>
-        <img
-          class="hero-photo"
-          src="https://media.licdn.com/dms/image/v2/D5603AQHLTi5_wtzPhg/profile-displayphoto-crop_800_800/B56Z6yakGgIoAI-/0/1781109769790?e=1783555200&v=beta&t=YEXq3OShR07rdYcmIUdsQDBFlLJ_B95zp0jRTv991v0"
-          alt="Thenipalli Kiran Kumar"
-          onerror="this.src='https://ui-avatars.com/api/?name=Kiran+Kumar&size=300&background=F59E0B&color=0A0A0A&bold=true&font-size=0.4'"
-        />
+        <svg class="hero-photo" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+              <stop offset="0%" stop-color="#1A1A1A"/>
+              <stop offset="100%" stop-color="#0A0A0A"/>
+            </radialGradient>
+            <radialGradient id="faceGrad" cx="50%" cy="35%" r="55%">
+              <stop offset="0%" stop-color="#2A2A2A"/>
+              <stop offset="100%" stop-color="#141414"/>
+            </radialGradient>
+          </defs>
+          <!-- Background -->
+          <circle cx="150" cy="150" r="150" fill="url(#bgGrad)"/>
+          <!-- Amber ring accent -->
+          <circle cx="150" cy="150" r="148" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.4"/>
+          <!-- Body / shoulders -->
+          <ellipse cx="150" cy="280" rx="90" ry="60" fill="#1C1C1C"/>
+          <ellipse cx="150" cy="265" rx="72" ry="48" fill="#242424"/>
+          <!-- Neck -->
+          <rect x="132" y="195" width="36" height="38" rx="8" fill="#C8956B"/>
+          <!-- Head -->
+          <ellipse cx="150" cy="175" rx="58" ry="65" fill="url(#faceGrad)"/>
+          <ellipse cx="150" cy="175" rx="55" ry="62" fill="#C8956B"/>
+          <!-- Hair -->
+          <ellipse cx="150" cy="118" rx="55" ry="28" fill="#1A1008"/>
+          <ellipse cx="100" cy="145" rx="14" ry="30" fill="#1A1008"/>
+          <ellipse cx="200" cy="145" rx="14" ry="30" fill="#1A1008"/>
+          <!-- Eyes -->
+          <ellipse cx="128" cy="170" rx="9" ry="10" fill="white"/>
+          <ellipse cx="172" cy="170" rx="9" ry="10" fill="white"/>
+          <circle cx="129" cy="171" r="6" fill="#1A1008"/>
+          <circle cx="173" cy="171" r="6" fill="#1A1008"/>
+          <circle cx="131" cy="169" r="2" fill="white"/>
+          <circle cx="175" cy="169" r="2" fill="white"/>
+          <!-- Eyebrows -->
+          <path d="M118 158 Q128 153 138 157" stroke="#1A1008" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M162 157 Q172 153 182 158" stroke="#1A1008" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <!-- Nose -->
+          <path d="M148 178 Q145 192 140 196 Q150 200 160 196 Q155 192 152 178" fill="#B8845A" opacity="0.6"/>
+          <!-- Mouth -->
+          <path d="M135 208 Q150 218 165 208" stroke="#8B5E3C" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <!-- Initials watermark -->
+          <text x="150" y="155" text-anchor="middle" font-family="'Syne',sans-serif" font-size="0" fill="#F59E0B" opacity="0">KK</text>
+          <!-- Amber glow at bottom -->
+          <radialGradient id="glow" cx="50%" cy="100%" r="50%">
+            <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+          </radialGradient>
+          <circle cx="150" cy="150" r="150" fill="url(#glow)"/>
+        </svg>
         <div class="hero-badge">
           <div class="badge-dot"></div>
           Open to Opportunities
